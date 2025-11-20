@@ -1,7 +1,5 @@
 # Travel-Aura
 
-Here is a clean, professional **README.md** you can copy-paste directly into your project:
-
 ---
 
 # 🌍 Travel Booking Application (MERN Stack)
