@@ -1,6 +1,5 @@
 import express from "express";
 import mongoose from "mongoose";
-import bodyParser from "body-parser";
 import cors from "cors";
 import authRoutes from "./routes/authRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
@@ -14,12 +13,26 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3050;
 
-mongoose
-  .connect(process.env.MONGO_URL)
-  .then(() => console.log("DB connected"))
-  .catch((err) => console.log(err));
+// ✅ Connect DB
+const connectDB = async () => {
+  try {
+    await mongoose.connect(process.env.MONGO_URL, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true
+    });
+    console.log("✅ MongoDB Connected");
+    console.log("MongoDB URL:", process.env.MONGO_URL);
+    console.log("Connected to DB:", mongoose.connection.name);
+  } catch (error) {
+    console.log("❌ MongoDB Connection Failed");
+    console.error(error);
+    process.exit(1);
+  }
+};
 
-// Middleware for CORS and JSON parsing
+connectDB(); // ✅ Call DB
+
+// ✅ CORS
 const allowedOrigins = [
   "https://trips-travel.vercel.app",
   "http://localhost:5173",
@@ -33,13 +46,15 @@ app.use(
         callback(new Error("Not allowed by CORS"));
       }
     },
+    credentials: true,
   })
 );
+
+// ✅ Middleware
 app.use(express.json());
 app.use(cookieParser());
-app.use(bodyParser.json());
 
-// Routes
+// ✅ Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/user", userRoutes);
 app.use("/api/tour", tourRoutes);

@@ -27,11 +27,11 @@ const Register = () => {
     try {
       const response = await fetch(`${BASE_URL}/auth/register`, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
+        credentials: "include",
         body: JSON.stringify(formData),
       });
+
       const { message } = await response.json();
 
       if (response.ok) {

@@ -1,4 +1,4 @@
-import Logo from "./../../assets/images/logo3.png";
+import Logo from "./../../assets/images/logo2.png";
 import React, { useContext, useState } from "react";
 import {
   FaFacebookF,
@@ -25,10 +25,10 @@ const Footer = () => {
                 className="h-20 md:mr-12 "
               />
               <div className="flex flex-col mt-8 text-center md:text-left">
-                <p className="mb-2">Address: 123 Travel St, City, Country</p>
-                <p className="mb-2">Phone: +1 234 567 890</p>
-                <p className="mb-2">Email: info@tripstravels.com</p>
-                <p>&copy; 2024 Trips Travels. All rights reserved.</p>
+                <p className="mb-2">Address: Bharathi street, Tiruppur, TamilNadu, India</p>
+                <p className="mb-2">Phone: +91 8807614376</p>
+                <p className="mb-2">Email: info@travelaura.com</p>
+                <p>&copy; 2025 Trips Travels. All rights reserved.</p>
               </div>
             </div>
 

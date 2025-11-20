@@ -19,7 +19,7 @@ const CreateTours = () => {
       maxGroupSize: 1,
       photo: '',
       distance: 0,
-      featured: false
+      featured: true
     })
 
     
