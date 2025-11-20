@@ -188,10 +188,9 @@ npm run dev
 
 ## 📸 Screenshots (Add yours here)
 
-```
-![Dashboard](./screenshots/admin-dashboard.png)
-![User Tour Page](./screenshots/tour-page.png)
-```
+<img width="1920" height="1080" alt="Screenshot 2025-11-09 210102" src="https://github.com/user-attachments/assets/8910de0e-09cb-43d4-bbd7-2f7205465661" />
+<img width="1920" height="1080" alt="Screenshot 2025-11-09 210102" src="https://github.com/user-attachments/assets/2928ecb0-32eb-4ef3-8b19-e20654aad231" />
+
 
 ---
 
