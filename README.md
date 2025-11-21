@@ -186,7 +186,7 @@ npm run dev
 
 ---
 
-## 📸 Screenshots (Add yours here)
+## 📸 Screenshots 
 
 <img width="1920" height="1080" alt="Screenshot 2025-11-09 210102" src="https://github.com/user-attachments/assets/8910de0e-09cb-43d4-bbd7-2f7205465661" />
 <img width="1920" height="1080" alt="Screenshot 2025-11-09 210135" src="https://github.com/user-attachments/assets/46fa8c33-f2d9-4df9-8bb2-5687a3ec3fb9" />
@@ -222,12 +222,3 @@ Pull requests are welcome. Open an issue to suggest improvements.
 This project is licensed under the MIT License.
 
 ---
-
-If you want, I can also generate:
-
-✅ A more advanced README
-✅ A GitHub-ready version with badges
-✅ A version including screenshots placeholders
-✅ Deployment instructions (Render, Vercel, Netlify, Railway)
-
-Just tell me!
